@@ -1,1 +1,38 @@
-<p>meeting-form works!</p>
+<!-- <p>meeting-form works!</p> --> 
+
+<div class="container">
+    <h1>Client Meeting Form</h1>
+    <form #meetingForm="ngForm" (ngSubmit)="onSubmit()">
+      
+          <div class="mb-3">
+            <label for="topic" class="form-label">Meeting Topic</label>
+            <input type="text" class="form-control" id="topic"
+            [(ngModel)]="model.topic" name="topic" required #topic="ngModel">
+               <div>topic is Required</div>  
+              <div class="alert alert-danger" role="alert" [hidden]="topic.valid || topic.pristine">
+                Meeting Topic is Required!
+              </div>
+          </div> 
+
+           <div class="mb-3">
+            <label for="NumberOfPeople" class="form-label">Nubmer of People</label>
+            <input type="NumberOfPeople" class="form-control" id="NumberOfPeople"
+            [(ngModel)]="model.NumberOfPeople" name="NumberOfPeople" required #NumberOfPeople="ngModel">
+               <div>Number of People is Required</div>
+              <div class="alert alert-danger" role="alert" [hidden]="NumberOfPeople.valid || NumberOfPeople.pristine">
+                Number of People is Required!
+              </div> 
+          </div> 
+
+          <div class="mb-3">
+            <label for="Date" class="form-label">Date & Time</label>
+            <input type="datetime-local" class="form-control" id="Date"
+            [(ngModel)]="model.startTime" name="Date" required #Date="ngModel">
+               <div>Date is Required</div>
+              <div class="alert alert-danger" role="alert" [hidden]="Date.valid || Date.pristine">
+                Date is Required!
+              </div> 
+          </div> 
+
+      </form> 
+    </div>
