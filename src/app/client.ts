@@ -4,6 +4,8 @@ export class Client {
         public name: string,
         public email: string,
         public address: string,
-        public password: string
+        public password: string,
+        public repeatpassword: string
+
     ){}
 }

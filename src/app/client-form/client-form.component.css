@@ -4,3 +4,7 @@
     border-radius: 5px; /* Rounded corners for the container */
     background-color: #F9F9F9; /* Optional background color */
   }
+
+  button {
+    margin-left: 15px;
+  }

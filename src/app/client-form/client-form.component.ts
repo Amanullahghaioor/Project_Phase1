@@ -21,7 +21,7 @@ export class ClientFormComponent {
   
   constructor(){
     //let model;
-    this.model = new Client(-1, 'John Doe', 'john@doe.com', '123 Main Street', 'john@doe.com');
+    this.model = new Client(1,'John Doe', 'johndoe@example.com', '123 Main Street', 'abc12345', 'abc12345');
   }
   /////////////////////////////////////////////
   onSubmit(){
